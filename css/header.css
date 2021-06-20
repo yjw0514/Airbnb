@@ -21,12 +21,16 @@ aside > a {
 
 /* Navbar */
 header {
-  max-width: 1760px;
   width: 100%;
   position: absolute;
   top: 57.6px;
   left: 0;
   right: 0;
+}
+
+.bar {
+  width: 100%;
+  max-width: 1760px;
   margin: auto;
   padding: 0 80px;
 }
