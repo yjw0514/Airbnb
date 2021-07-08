@@ -35,22 +35,43 @@ header {
 }
 
 #navbar {
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar_logo,
+.navbar_logo {
+  width: 230px;
+}
+
+/* .navbar_logo,
 .navbar_user_wrap {
   width: 626px;
   height: 80px;
   display: flex;
   align-items: center;
+} */
+
+.navbar_form_wrap {
+  width: 850px;
+  height: 146px;
+  margin: auto;
 }
 
-.navbar_menu {
+#navbar_form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_form_menu {
+  all: unset;
   width: 348px;
-  height: 48px;
+  height: 80px;
   padding: 0 24px;
   display: flex;
   justify-content: center;
@@ -61,10 +82,127 @@ header {
   padding: 10px 16px;
   font-size: var(--font-small);
   font-weight: var(--font-regular);
-  line-height: 20px;
+  line-height: 60px;
+}
+
+/* SearchBar */
+.searchbar {
+  width: 848px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  border: 1px solid #dddddd;
+  background-color: var(--color-white);
+  border-radius: 32px;
+}
+
+.searchbar_label_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.searchbar_label {
+  padding: 14px 24px;
+}
+
+.searchbar .line {
+  width: 0;
+  height: 32px;
+  border-right: 1px solid #dddddd;
+  align-self: center;
+}
+
+.searchbar_menu_title {
+  width: 100%;
+  font-size: 12px;
+  font-weight: var(--weight-regular);
+  letter-spacing: 0.48px;
+  padding-bottom: 2px;
+}
+
+.searchbar_label input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: var(--font-micro);
+  font-weight: var(--weight-bold);
+}
+
+.searchbar_label_wrap:last-child {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 9px;
+}
+
+.searchbar_icon {
+  border: none;
+  width: 48px;
+  height: 48px;
+  padding: 16px;
+  background-color: #ff385c;
+  border-radius: 50%;
+}
+
+/* .searchbar {
+  width: 848px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  border: 1px solid #dddddd;
+  background-color: var(--color-white);
+  border-radius: 32px;
+}
+
+
+.searchbar .searchbar_menu {
+  padding: 14px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.searchbar_menu_title {
+  width: 100%;
+  font-size: 12px;
+  font-weight: var(--weight-regular);
+  letter-spacing: 0.48px;
+  padding-bottom: 2px;
+}
+
+.searchbar_menu input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: var(--font-micro);
+  font-weight: var(--weight-bold);
+}
+
+.searchbar_menu:last-child {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 9px;
+}
+
+.searchbar_menu_icon {
+  width: 48px;
+  height: 48px;
+  padding: 16px;
+  background-color: #ff385c;
+  border-radius: 50%;
+} */
+
+.search_icon {
+  color: var(--color-white);
 }
 
 .navbar_user_wrap {
+  width: 230px;
   justify-content: flex-end;
 }
 
@@ -110,65 +248,4 @@ header {
   width: 30px;
   height: 30px;
   margin-left: 10px;
-}
-
-/* SearchBar */
-.searchbar {
-  width: 848px;
-  height: 64px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  border: 1px solid #dddddd;
-  background-color: var(--color-white);
-  border-radius: 32px;
-}
-
-.searchbar .line {
-  width: 0;
-  height: 32px;
-  border-right: 1px solid #dddddd;
-  align-self: center;
-}
-
-.searchbar .searchbar_menu {
-  padding: 14px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-}
-
-.searchbar_menu_title {
-  width: 100%;
-  font-size: 12px;
-  font-weight: var(--weight-regular);
-  letter-spacing: 0.48px;
-  padding-bottom: 2px;
-}
-
-.searchbar_menu input {
-  width: 100%;
-  outline: none;
-  border: none;
-  font-size: var(--font-micro);
-  font-weight: var(--weight-bold);
-}
-
-.searchbar_menu:last-child {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 9px;
-}
-
-.searchbar_menu_icon {
-  width: 48px;
-  height: 48px;
-  padding: 16px;
-  background-color: #ff385c;
-  border-radius: 50%;
-}
-
-.searchbar_icon {
-  color: var(--color-white);
 }
