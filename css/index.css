@@ -49,26 +49,22 @@
   line-height: 18px;
 }
 
-/* Place */
+/* Place(가까운 여행지 둘러보기) */
 .place_wrap {
   width: 100%;
   max-width: 1760px;
-  height: 220px;
+  height: 260px;
   padding: 0 80px;
-  margin: 24px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: auto;
 }
 
-/* .place {
-  width: 1616px;
-  height: 100%;
-} */
+.place {
+  margin: 24px 0;
+}
 
 .place_title {
   font-size: var(--font-medium);
-  font-weight: 600;
+  font-weight: var(--weight-bold);
   line-height: 52px;
   padding-bottom: 16px;
 }
@@ -113,4 +109,48 @@
   font-size: var(--font-small);
   font-weight: 200;
   line-height: 20px;
+}
+
+/* Stay(어디에서나,) */
+.stay_wrap {
+  width: 100%;
+  max-width: 1760px;
+  height: 590px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.stay {
+  margin: 40px 0 60px;
+  height: 488px;
+}
+
+.stay_title {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  line-height: 52px;
+  padding-bottom: 16px;
+}
+
+.stay_item_wrap {
+  width: 100%;
+  max-width: 1600px;
+  height: 430px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stay_img {
+  width: calc(100% - 5px);
+  height: 386.5px;
+  border-radius: 14px;
+  object-fit: contain;
+}
+
+.stay_item > p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  line-height: 22px;
+  padding-top: 8px;
 }
