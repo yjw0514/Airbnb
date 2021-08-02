@@ -26,11 +26,6 @@
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
-    <!-- aside, 
-  header(absolute) > navbar, searchbar, 
-  main > section1~ 6 (hero, place, stay, host,  experience, notice)
-  footer > -->
-
     <!-- Banner -->
     <div class="banner">
       <aside>
@@ -59,19 +54,11 @@
               </svg>
             </a>
           </div>
-          <!-- <ul class="navbar_menu">
-          <li class="navbar_menu_items"><a href="">숙소</a></li>
-          <li class="navbar_menu_items"><a href="">체험</a></li>
-          <li class="navbar_menu_items"><a href="">온라인 체험</a></li>
-        </ul> -->
           <div class="navbar_form_wrap">
             <form action="" id="navbar_form">
               <fieldset class="navbar_form_menu">
                 <div class="navbar_menu_items_wrap">
                   <button class="navbar_menu_items">숙소</button>
-                  <!-- <label for="" class="navbar_menu_items"
-                    ><a href="">숙소</a></label
-                  > -->
                   <button class="navbar_menu_items">체험</button>
                   <button class="navbar_menu_items">온라인 체험</button>
                 </div>
@@ -218,58 +205,6 @@
             </div>
           </div>
         </div>
-        <!-- SearchBar -->
-        <!-- <div class="searchbar">
-          <div class="searchbar_menu">
-            <p class="searchbar_menu_title">위치</p>
-            <input
-              class="searchbar_menu_sub"
-              placeholder="어디로 여행가세요?"
-            />
-          </div>
-          <div class="line"></div>
-          <div class="searchbar_menu">
-            <p class="searchbar_menu_title">체크인</p>
-            <input class="searchbar_menu_sub" placeholder="날짜 입력" />
-          </div>
-          <div class="line"></div>
-          <div class="searchbar_menu">
-            <p class="searchbar_menu_title">체크아웃</p>
-            <input class="searchbar_menu_sub" placeholder="날짜 입력" />
-          </div>
-          <div class="line"></div>
-          <div class="searchbar_menu">
-            <div>
-              <p class="searchbar_menu_title">인원</p>
-              <input class="searchbar_menu_sub" placeholder="게스트 추가" />
-            </div>
-            <div class="searchbar_menu_icon">
-              <svg
-                class="searchbar_icon"
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-                style="
-                  display: block;
-                  fill: none;
-                  height: 16px;
-                  width: 16px;
-                  stroke: currentColor;
-                  stroke-width: 4;
-                  overflow: visible;
-                "
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-              >
-                <g fill="none">
-                  <path
-                    d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"
-                  ></path>
-                </g>
-              </svg>
-            </div>
-          </div>
-        </div> -->
       </div>
     </header>
     <!-- Main -->
@@ -279,102 +214,171 @@
         <div class="hero_inner">
           <h2 class="hero_inner_title">슬기로운<br />자연생활</h2>
           <p>에어비앤비가 엄선한 위시리스트를 만나보세요.</p>
-          <div class="hero_inner_link">
-            <a href="" target="blank">
-              <span>여행 아이디어 얻기</span>
-            </a>
-          </div>
+          <button class="hero_inner_link">
+            <p>여행 아이디어 얻기</p>
+          </button>
         </div>
       </section>
       <!-- Place -->
-      <section class="place_wrap">
+      <section id="place_wrap">
         <div class="place">
           <h1 class="place_title">가까운 여행지 둘러보기</h1>
           <div class="place_item_wrap">
             <div class="place_item">
-              <img class="place_img" src="img/place1.jpg" alt="" />
-              <div class="place_text">
-                <p>서울</p>
-                <span>차로 15분 거리</span>
-              </div>
+              <a>
+                <img class="place_img" src="img/place1.jpg" alt="" />
+                <div class="place_text">
+                  <p>서울</p>
+                  <span>차로 15분 거리</span>
+                </div>
+              </a>
             </div>
             <div class="place_item">
-              <img class="place_img" src="img/place2.webp" alt="" />
-              <div class="place_text">
-                <p>부산</p>
-                <span>차로 5시간 거리</span>
-              </div>
+              <a>
+                <img class="place_img" src="img/place2.webp" alt="" />
+                <div class="place_text">
+                  <p>부산</p>
+                  <span>차로 5시간 거리</span>
+                </div>
+              </a>
             </div>
             <div class="place_item">
-              <img class="place_img" src="img/place3.webp" alt="" />
-              <div class="place_text">
-                <p>양양군</p>
-                <span> 차로 2.5시간 거리</span>
-              </div>
+              <a>
+                <img class="place_img" src="img/place3.webp" alt="" />
+                <div class="place_text">
+                  <p>양양군</p>
+                  <span> 차로 2.5시간 거리</span>
+                </div>
+              </a>
             </div>
             <div class="place_item">
-              <img class="place_img" src="img/place4.webp" alt="" />
-              <div class="place_text">
-                <p>속초시</p>
-                <span>차로 2.5시간 거리</span>
-              </div>
+              <a>
+                <img class="place_img" src="img/place4.webp" alt="" />
+                <div class="place_text">
+                  <p>속초시</p>
+                  <span>차로 2.5시간 거리</span>
+                </div>
+              </a>
             </div>
             <div class="place_item">
-              <img class="place_img" src="img/place5.webp" alt="" />
-              <div class="place_text">
-                <p>고성군</p>
-                <span>차로 3시간 거리</span>
-              </div>
+              <a>
+                <img class="place_img" src="img/place5.webp" alt="" />
+                <div class="place_text">
+                  <p>고성군</p>
+                  <span>차로 3시간 거리</span>
+                </div>
+              </a>
             </div>
             <div class="place_item">
-              <img class="place_img" src="img/place6.jpg" alt="" />
-              <div class="place_text">
-                <p>완주군</p>
-                <span>차로 3시간 거리</span>
-              </div>
+              <a>
+                <img class="place_img" src="img/place6.jpg" alt="" />
+                <div class="place_text">
+                  <p>완주군</p>
+                  <span>차로 3시간 거리</span>
+                </div>
+              </a>
             </div>
             <div class="place_item">
-              <img class="place_img" src="img/place7.jpg" alt="" />
-              <div class="place_text">
-                <p>대구</p>
-                <span>차로 4시간 거리</span>
-              </div>
+              <a>
+                <img class="place_img" src="img/place7.jpg" alt="" />
+                <div class="place_text">
+                  <p>대구</p>
+                  <span>차로 4시간 거리</span>
+                </div>
+              </a>
             </div>
             <div class="place_item">
-              <img class="place_img" src="img/place8.webp" alt="" />
-              <div class="place_text">
-                <p>전주시</p>
-                <span>차로 3시간 거리</span>
-              </div>
+              <a>
+                <img class="place_img" src="img/place8.webp" alt="" />
+                <div class="place_text">
+                  <p>전주시</p>
+                  <span>차로 3시간 거리</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Stay -->
-      <section class="stay_wrap">
+      <section id="stay_wrap">
         <div class="stay">
           <h1 class="stay_title">어디에서나, 여행은 살아보는 거야!</h1>
           <div class="stay_item_wrap">
             <div class="stay_item">
-              <img class="stay_img" src="img/stay1.jpg" alt="">
+              <img class="stay_img" src="img/stay1.jpg" alt="" />
               <p>자연생활을 만끽할 수 있는 숙소</p>
             </div>
             <div class="stay_item">
-              <img class="stay_img" src="img/stay2.jpg" alt="">
+              <img class="stay_img" src="img/stay2.jpg" alt="" />
               <p>독특한 공간</p>
             </div>
             <div class="stay_item">
-              <img class="stay_img" src="img/stay3.jpg" alt="">
+              <img class="stay_img" src="img/stay3.jpg" alt="" />
               <p>집 전체</p>
             </div>
             <div class="stay_item">
-              <img class="stay_img" src="img/stay4.jpg" alt="">
+              <img class="stay_img" src="img/stay4.jpg" alt="" />
               <p>반려동물 동반 가능</p>
             </div>
           </div>
         </div>
-      </secti>
+      </section>
+
+      <!-- aside, 
+  header(absolute) > navbar, searchbar, 
+  main > section1~ 6 (hero, place, stay, host,  experience, notice)
+  footer > -->
+
+      <!-- Host -->
+      <section id="host_wrap">
+        <div class="host">
+          <div class="host_inner">
+            <div class="host_content">
+              <h2 class="host_content_title">호스트가<br />되어보세요</h2>
+              <h4 class="host_content_sub">
+                숙소를 공유하여 부수입을 올리고 새로운 가능성을 만나세요.
+              </h4>
+              <button>
+                <p>자세히 알아보기</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Experience -->
+      <section id="experience_wrap">
+        <div class="experience">
+          <h2>체험 둘러보기</h2>
+          <h4>
+            현지 전문가와 함께하는 독특한 액티비티에 오프라인이나 온라인으로
+            참여해 보세요.
+          </h4>
+          <ul class="experience_inner">
+            <li class="experience_content">
+              <a>
+                <img src="img/experience1.jpg" />
+                <h5>추천 컬렉션: 여행 본능을 깨우는 체험</h5>
+                <p>온라인 체험으로 집에서 랜선 여행을 즐기세요.</p>
+              </a>
+            </li>
+            <li class="experience_content">
+              <a>
+                <img src="img/experience2.jpg" />
+                <h5>온라인 체험</h5>
+                <p>호스트와 실시간으로 소통하면서 액티비티를 즐겨보세요.</p>
+              </a>
+            </li>
+            <li class="experience_content">
+              <a>
+                <img src="img/experience3.jpg" />
+                <h5>체험</h5>
+                <p>어디에서든 세계 각지의 매력을 만나실 수 있습니다.</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>

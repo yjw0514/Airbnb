@@ -20,8 +20,8 @@
 
 .hero_inner_title {
   color: var(--color-black);
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 600;
   line-height: 62px;
 }
 
@@ -34,23 +34,22 @@
 
 .hero_inner_link {
   width: 160px;
-  height: 34px;
+  height: 40px;
   background-color: var(--color-black);
-  border-radius: 12px;
-  padding: 8px 16px;
+  border-radius: 10px;
   text-align: center;
+  padding: 8px 16px;
 }
 
-.hero_inner_link a {
-  display: block;
+.hero_inner_link > p {
   color: var(--color-white);
   font-size: var(--font-micro);
   font-weight: var(--weight-semi-bold);
-  line-height: 18px;
+  line-height: 20px;
 }
 
 /* Place(가까운 여행지 둘러보기) */
-.place_wrap {
+#place_wrap {
   width: 100%;
   max-width: 1760px;
   height: 260px;
@@ -81,7 +80,7 @@
   column-gap: 16px;
 }
 
-.place_item {
+.place_item > a {
   display: flex;
   height: 64px;
 }
@@ -112,7 +111,7 @@
 }
 
 /* Stay(어디에서나,) */
-.stay_wrap {
+#stay_wrap {
   width: 100%;
   max-width: 1760px;
   height: 590px;
@@ -142,10 +141,8 @@
 }
 
 .stay_img {
-  width: calc(100% - 5px);
-  height: 386.5px;
-  border-radius: 14px;
-  object-fit: contain;
+  width: calc(100% - 10px);
+  border-radius: 6%;
 }
 
 .stay_item > p {
@@ -153,4 +150,125 @@
   font-weight: var(--weight-bold);
   line-height: 22px;
   padding-top: 8px;
+}
+
+/* Host */
+#host_wrap {
+  width: 100%;
+  max-width: 1760px;
+  height: 480px;
+  margin: 0 auto 24px;
+  padding: 0 80px;
+}
+
+.host {
+  width: 100%;
+  max-width: 1600px;
+  height: 480px;
+  border-radius: 14px;
+  background-image: url(../img/host.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.host_inner {
+  width: 500px;
+  height: 480px;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.host_content_title {
+  color: var(--color-white);
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  line-height: 52px;
+}
+
+.host_content_sub {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  line-height: 24px;
+  margin-top: 12px;
+  word-break: keep-all;
+}
+
+.host_content > button {
+  width: 180px;
+  height: 48px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  text-align: center;
+  padding: 14px 18px;
+  margin-top: 40px;
+}
+
+.host_content > button > p {
+  color: var(--color-black);
+  font-size: var(--font-small);
+  font-weight: 600;
+  line-height: 20px;
+}
+
+/* Experience */
+#experience_wrap {
+  width: 100%;
+  max-width: 1760px;
+  height: 760px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.experience {
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  padding: 40px 0;
+}
+
+.experience > h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  line-height: 36px;
+}
+
+.experience > h4 {
+  font-size: 26px;
+  font-weight: var(--weight-regular);
+  line-height: 36px;
+  margin-bottom: 18px;
+}
+
+.experience_inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience_content {
+  width: calc(33.3333% - 12px);
+  height: auto;
+}
+
+.experience_content > a > img {
+  width: 100%;
+  border-radius: 2%;
+}
+
+.experience_content > a > h5 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  line-height: 22px;
+  margin-top: 8px;
+}
+
+.experience_content > a > p {
+  font-size: var(--font-micro);
+  font-weight: var(--weight-regular);
+  line-height: 18px;
+  margin-top: 4px;
 }
